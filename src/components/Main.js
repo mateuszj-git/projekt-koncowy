@@ -27,7 +27,7 @@ import Podloga from './Podloga';
 import Wall from './Wall';
 
 
-import io from "socket.io-client"
+import io from '../../node_modules/socket.io/client-dist/socket.io.js'
 var tab = []
 var floor = []
 var poz = {}
@@ -56,9 +56,7 @@ export default class Main {
 
     constructor(container) {
 
-        const socket = require("socket.io-client")("/", {
-
-        })
+        const socket = io("/")
         pt1.id = "pt1"
         pt1.style.position = "absolute"
         pt1.style.top = "5vh"
