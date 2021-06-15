@@ -152,26 +152,22 @@ export default class Main {
 
             // do something
         });
+
         setInterval(function () {
             socket.emit('test', floor)
             socket.on('sendfloor', floor1 => {
                 this1.updateFloor(floor1)
-            })
-
-        }, 60);
-        setInterval(function () {
+            });
             socket.emit('position', position)
             socket.on('sendposition', position1 => {
                 this1.updateModel(position1)
 
 
-            })
-        }, 60);
-        setInterval(function () {
+            });
             socket.emit('points', pkt)
             socket.on('sendpoints', pktp1 => {
                 this1.updatePoints(pktp1)
-            })
+            });
             socket.emit('points1', pkt1)
             socket.on('sendpoints1', pktp2 => {
                 this1.updatePoints1(pktp2)
