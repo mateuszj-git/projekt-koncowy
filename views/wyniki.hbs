@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyniki</title>
+    <link rel="shortcut icon" href="./gfx/logo.jpg">
+    <style>
+        * {
+            font-family: 'Copperplate Gothic Light';
+        }
+
+        body {
+            background-image: url(./gfx/olg.jpg);
+        }
+
+        #wynik {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #wyn {
+
+            color: yellow;
+            font-size: 20pt;
+            text-shadow: black 0.5em 0.5em 0.5em;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        #wyn:hover {
+            font-size: 24pt;
+        }
+
+        table {
+            border: 2px solid yellow;
+            border-radius: 10px;
+        }
+
+        td {
+            border: 2px solid yellow;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wynik">
+        <table>
+
+            {{#each docsy}}
+            <tr>
+
+                <td id="jeden">
+                    <h1 id="wyn">Czas: {{czas}}</h1>
+                </td>
+                <td id="dwa">
+                    <h1 id="wyn">id Gracza: {{_id}}</h1>
+                </td>
+
+            </tr>
+            {{/each}}
+
+        </table>
+    </div>
+</body>
+
+</html>

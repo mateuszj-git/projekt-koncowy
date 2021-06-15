@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="shortcut icon" href="./gfx/logo.jpg">
+    <style>
+        * {
+            font-family: 'Courier New';
+        }
+
+        #zegar {
+            top: 400px;
+            position: absolute;
+            margin-left: 47%;
+            font-size: 40pt;
+            text-align: center;
+            color: black;
+            background-color: blue;
+            text-shadow: -1px 0 black;
+            /* border: 3px solid black; */
+            border-radius: 15px;
+        }
+
+        #legenda {
+            position: absolute;
+            margin-left: 35%;
+            text-align: center;
+            font-size: 25pt;
+            color: blue;
+            text-shadow: -1px 1 black;
+        }
+    </style>
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <div id="zegar"></div>
+    <div id="legenda">
+        WAD - sterowanie postacią
+        C - kolorowanie
+    </div>
+</body>
+
+</html>

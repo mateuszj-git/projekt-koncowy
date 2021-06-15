@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./gfx/logo.jpg">
+    <style>
+        * {
+            font-family: 'Copperplate Gothic Light';
+        }
+
+        #klik {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body {
+            background-image: url(./gfx/tlo.png);
+        }
+
+        #tytul {
+            font-size: 150pt;
+            transition: 0.3s;
+        }
+
+        #tytul:hover {
+            font-size: 180pt;
+        }
+
+        .przycisk {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            border: 2px solid black;
+            border-radius: 4px;
+            width: 150px;
+            line-height: 40px;
+            display: inline-block;
+            font-family: Arial;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            width: 200px;
+            height: 40px;
+            font-size: 18pt;
+            text-align: center;
+
+        }
+
+        .przycisk:hover {
+            background-color: yellow;
+            color: black;
+            border-bottom: 2px solid black;
+        }
+
+        .przycisk:before {
+            content: "";
+            background-color: rgba(255, 255, 255);
+            height: 100%;
+            width: 40px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -70px;
+            transform: skewX(-45deg) translateX(0px);
+            transition: none;
+        }
+
+        .przycisk:hover:before {
+            transform: skewX(-45deg) translateX(250px);
+            transition: all 0.4s ease-in;
+        }
+
+        .przycisk2 {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            border: 2px solid black;
+            border-radius: 4px;
+            width: 150px;
+            line-height: 40px;
+            display: inline-block;
+            font-family: Arial;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            width: 200px;
+            height: 40px;
+            font-size: 18pt;
+            text-align: center;
+            /* margin-top: 3px; */
+
+        }
+
+        .przycisk2:hover {
+            background-color: orange;
+            color: black;
+            border-bottom: 2px solid black;
+        }
+
+        .przycisk2:before {
+            content: "";
+            background-color: rgba(255, 255, 255);
+            height: 100%;
+            width: 40px;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -70px;
+            transform: skewX(-45deg) translateX(0px);
+            transition: none;
+        }
+
+        .przycisk2:hover:before {
+            transform: skewX(-45deg) translateX(250px);
+            transition: all 0.4s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="klik">
+        <h1 id="tytul">PaintPiece</h1>
+        <a href="/game" class="przycisk">Rozpocznij</a>
+        <a href="/wyniki" class="przycisk2">Wyniki</a>
+
+    </div>
+
+</body>
+
+</html>
