@@ -173,7 +173,7 @@ export default class Main {
                 this1.updatePoints1(pktp2)
             })
 
-        }, 500);
+        }, 200);
         setInterval(function () {
 
             if (czas != 0) {
@@ -430,7 +430,7 @@ export default class Main {
                 }
             }
         }
-        else if (pktp1 > 3000 && pktp1 < 3050) {
+        else if (pktp1 > 3000 && pktp1 < 3150) {
             if (wh == "first") {
                 document.getElementById("pt1").innerHTML = "Twoj wynik: " + 3000
                 czas = zegar
@@ -465,7 +465,7 @@ export default class Main {
                     document.getElementById("pt2").innerHTML = "Twoj wynik: " + pktp2
                 }
             }
-        } else if (pktp2 > 3000 && pktp2 < 3050) {
+        } else if (pktp2 > 3000 && pktp2 < 3150) {
             if (wh == "second") {
                 document.getElementById("pt2").innerHTML = "Twoj wynik: " + 3000
                 czas = zegar
