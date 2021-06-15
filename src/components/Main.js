@@ -158,7 +158,7 @@ export default class Main {
                 this1.updateFloor(floor1)
             })
 
-        }, 10);
+        }, 100);
         setInterval(function () {
             socket.emit('position', position)
             socket.on('sendposition', position1 => {
@@ -166,7 +166,7 @@ export default class Main {
 
 
             })
-        }, 10);
+        }, 100);
         setInterval(function () {
             socket.emit('points', pkt)
             socket.on('sendpoints', pktp1 => {
