@@ -173,7 +173,7 @@ export default class Main {
                 this1.updatePoints1(pktp2)
             })
 
-        }, 1000);
+        }, 500);
         setInterval(function () {
 
             if (czas != 0) {
